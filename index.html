@@ -1,1 +1,271 @@
-Hello World
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cesare Torchia &mdash; CesaTor</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Cesare Torchia's Web Profile" />
+	<meta name="keywords" content="cesare torchia, cv, curricula, torchia, html5, css3, mobile first, responsive" />
+
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<style>
+		#head,
+		.cover {
+			background-color: transparent;
+			background-size: cover;
+			background-attachment: fixed;
+			position: relative;
+			width: 100%;
+		}
+
+		#head .overlay,
+		.cover .overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: #00c3ffe6;
+		}
+
+		.i-social {
+			margin: 0;
+			padding: 0;
+		}
+
+		.i-social li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: -moz-inline-stack;
+			display: inline-block;
+			zoom: 1;
+			*display: inline;
+		}
+
+		.i-social li a {
+			display: -moz-inline-stack;
+			display: inline-block;
+			zoom: 1;
+			*display: inline;
+			color: #FF9000;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.i-social li a i {
+			font-size: 20px;
+		}
+
+		#head .display-tc .profile-thumb,
+		.cover .display-tc .profile-thumb {
+			background-size: cover !important;
+			background-position: center center;
+			background-repeat: no-repeat;
+			position: relative;
+			height: 200px;
+			width: 200px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			border-radius: 50%;
+		}
+
+		body {
+			font-family: "Space Mono", Arial, serif;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 1.7;
+			color: #4d4d4d;
+			background: #fff;
+		}
+
+
+		#head .display-tc,
+		.cover .display-tc {
+			display: table-cell;
+			vertical-align: middle;
+			height: 100vh;
+		}
+
+		#head .display-tc h1,
+		#head .display-tc h2,
+		#head .display-tc h3,
+		.cover .display-tc h1,
+		.cover .display-tc h2,
+		.cover .display-tc h3 {
+			margin: 0;
+			padding: 0;
+			color: white;
+		}
+
+		#head .display-tc h1,
+		.cover .display-tc h1 {
+			font-family: "Kaushan Script", cursive;
+			margin-bottom: 30px;
+			font-size: 50px;
+			line-height: 1.3;
+			font-weight: 300;
+			-webkit-transform: rotate(-5deg);
+			-moz-transform: rotate(-5deg);
+			-ms-transform: rotate(-5deg);
+			-o-transform: rotate(-5deg);
+			transform: rotate(-5deg);
+		}
+
+		#head .display-tc h1 span,
+		.cover .display-tc h1 span {
+			padding: 4px 15px;
+			position: relative;
+		}
+
+		#head .display-tc h1 span:before,
+		.cover .display-tc h1 span:before {
+			position: absolute;
+			top: 40px;
+			left: 0;
+			width: 30px;
+			height: 4px;
+			content: '';
+			background: #fff;
+			margin-left: -30px;
+		}
+
+		#head .display-tc h1 span:after,
+		.cover .display-tc h1 span:after {
+			position: absolute;
+			top: 40px;
+			right: 0;
+			width: 30px;
+			height: 4px;
+			content: '';
+			background: #fff;
+			margin-right: -30px;
+		}
+
+		@media screen and (max-width: 768px) {
+
+			#head .display-tc h1,
+			.cover .display-tc h1 {
+				font-size: 34px;
+			}
+
+			#head .display-tc h1 span:before,
+			.cover .display-tc h1 span:before {
+				top: 28px;
+				width: 20px;
+				height: 3px;
+				margin-left: -15px;
+			}
+
+			#head .display-tc h1 span:after,
+			.cover .display-tc h1 span:after {
+				top: 28px;
+				width: 20px;
+				height: 3px;
+				margin-right: -15px;
+			}
+		}
+
+		#head .display-tc h2,
+		.cover .display-tc h2 {
+			font-size: 20px;
+			line-height: 1.5;
+			margin-bottom: 30px;
+		}
+
+		#head .display-tc h3,
+		.cover .display-tc h3 {
+			font-size: 16px;
+		}
+
+		@media screen and (max-width: 768px) {
+
+			#head .display-tc h3,
+			.cover .display-tc h3 {
+				font-size: 14px;
+			}
+		}
+
+		#head .display-tc .profile-thumb,
+		.cover .display-tc .profile-thumb {
+			background-size: cover !important;
+			background-position: center center;
+			background-repeat: no-repeat;
+			position: relative;
+			height: 200px;
+			width: 200px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			border-radius: 50%;
+		}
+
+		#head .display-tc .i-social li a,
+		.cover .display-tc .i-social li a {
+			color: #fff;
+		}
+
+		#head .display-tc .i-social li a i,
+		.cover .display-tc .i-social li a i {
+			font-size: 30px;
+		}
+
+		#head .display-t,
+		.cover .display-t {
+			width: 100%;
+			display: table;
+		}
+	</style>
+
+</head>
+
+<body>
+	<header id="head" class="cover " role="banner"
+		style="background-image:url(https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);"
+		data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="col-md-12 text-center">
+				<div class="display-t ">
+					<div class="display-tc">
+						<div class="profile-thumb" style="background: url(https://avatars3.githubusercontent.com/u/25766647?s=460&u=ca16755588e50f58dc441a21339cc54e24349e0b&v=4);"></div>
+						<h1><span>Cesare Torchia</span></h1>
+						<h3><span>Full Stack Web Developer / Flutter Developer</span></h3>
+						<p>
+						<ul class="i-social">
+							<li><a href="https://mastodon.uno/@cesator" target="_blank"><img
+										src="https://img.icons8.com/windows/32/FFFFFF/mastodon.png" /> </a></li>
+							<li><a href="https://www.facebook.com/torchia.cesare/" target="_blank" target="_blank"><img
+										src="https://img.icons8.com/ios-glyphs/32/FFFFFF/facebook.png" /> </a>
+							</li>
+							<!-- <li><a href="#"><img src="https://img.icons8.com/ios-glyphs/32/FFFFFF/twitter.png"/> </a></li> -->
+							<li><a href="https://www.linkedin.com/in/cesare-torchia-971386141/" target="_blank"><img
+										src="https://img.icons8.com/ios-glyphs/32/FFFFFF/linkedin.png" /> </a>
+							</li>
+							<li><a href="https://github.com/CesaTor" target="_blank"><img
+										src="https://img.icons8.com/ios-glyphs/32/FFFFFF/github.png" /> </a>
+							</li>
+
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+</body>
+
+</html>
