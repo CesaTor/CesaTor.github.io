@@ -10,5 +10,4 @@ export default defineNuxtConfig({
       colors: ['primary', 'secondary', 'success', 'info', 'warning', 'error', 'purple', 'green']
     }
   }
-
 })
