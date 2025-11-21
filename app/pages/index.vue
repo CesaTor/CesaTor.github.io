@@ -8,7 +8,7 @@
       
       <div class="container mx-auto px-4 relative z-10 text-center transform-style-3d" ref="heroContainer">
         <div class="inline-block mb-6 px-4 py-1.5 rounded-full border border-primary-500/30 bg-primary-500/10 text-primary-300 text-sm font-medium animate-fade-in-up backdrop-blur-sm">
-          <span class="relative flex h-2 w-2 inline-block mr-2">
+          <span class="relative inline-flex h-2 w-2 mr-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
           </span>
