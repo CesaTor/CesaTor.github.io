@@ -3,8 +3,8 @@
     <!-- Navbar -->
     <header class="fixed top-0 left-0 right-0 z-50 border-b border-gray-800 bg-gray-950/80 backdrop-blur-md">
       <div class="container mx-auto px-4 h-16 flex items-center justify-between">
-        <NuxtLink to="/" class="text-xl font-bold bg-gradient-to-r from-primary-400 to-purple-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
-          CesaTor
+        <NuxtLink to="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+          <NuxtImg src="/logo.png" alt="CesaTor Logo" width="40" height="40" class="w-10 h-10 object-contain object-center" />
         </NuxtLink>
 
         <nav class="hidden md:flex items-center gap-8">

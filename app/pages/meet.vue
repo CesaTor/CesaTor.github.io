@@ -11,9 +11,9 @@
       <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl pointer-events-none animate-pulse-slow delay-700"></div>
 
       <!-- Profile Image Placeholder -->
-      <div class="relative mx-auto w-32 h-32 mb-6 rounded-full bg-gradient-to-br from-primary-500 to-purple-600 p-1 shadow-lg shadow-primary-500/30 animate-float">
-        <div class="w-full h-full rounded-full bg-gray-950 flex items-center justify-center overflow-hidden">
-           <span class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-purple-400">CT</span>
+      <div class="relative mx-auto w-32 h-32 rounded-full bg-gradient-to-br from-primary-500 to-purple-600 shadow-lg shadow-primary-500/30 animate-float">
+        <div class="rounded-full overflow-hidden flex items-center justify-center  ">
+          <NuxtImg src="/logo.png" alt="CesaTor Logo" />
         </div>
       </div>
 
