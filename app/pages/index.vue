@@ -53,7 +53,7 @@
       <h2 class="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">About Me</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(180px,auto)]">
         <!-- Bio Card -->
-        <div class="md:col-span-2 row-span-2 bg-gray-900/40 border border-gray-800 rounded-3xl p-8 backdrop-blur-md hover:border-primary-500/30 transition-colors group relative overflow-hidden">
+        <div class="md:col-span-1 row-span-2 bg-gray-900/40 border border-gray-800 rounded-3xl p-8 backdrop-blur-md hover:border-primary-500/30 transition-colors group relative overflow-hidden">
           <div class="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl group-hover:bg-primary-500/20 transition-colors duration-500"></div>
           <h3 class="text-2xl font-bold mb-4 text-white">The Developer</h3>
           <p class="text-gray-400 leading-relaxed text-lg mb-6">
@@ -63,6 +63,39 @@
             <UBadge color="primary" variant="subtle" size="lg">Nuxt Expert</UBadge>
             <UBadge color="purple" variant="subtle" size="lg">AI Integration</UBadge>
             <UBadge color="green" variant="subtle" size="lg">Flutter</UBadge>
+          </div>
+        </div>
+
+        <!-- ReQurv Card -->
+        <div class="md:col-span-2 bg-gray-900/40 border border-gray-800 rounded-3xl p-8 backdrop-blur-md hover:border-blue-500/30 transition-colors group relative overflow-hidden">
+          <div class="absolute top-0 left-0 -mt-10 -ml-10 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-colors duration-500"></div>
+          <div class="flex items-start gap-6">
+            <div class="flex-shrink-0">
+              <NuxtLink to="https://requrv.io" target="_blank" class="block group-hover:scale-105 transition-transform">
+                <div class="w-16 h-16 rounded-2xl p-2 flex items-center justify-center">
+                  <NuxtImg src="/req-logo.png" class="w-full text-blue-400 mb-3 group-hover:scale-110 transition-transform" />
+                </div>
+              </NuxtLink>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <h3 class="text-xl font-bold text-white">Part of ReQurv Team</h3>
+                <UIcon name="i-heroicons-check-badge-solid" class="w-5 h-5 text-blue-500" />
+              </div>
+              <p class="text-gray-400 leading-relaxed mb-3">
+                Working with an amazing team at <NuxtLink to="https://requrv.io" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors font-medium">ReQurv</NuxtLink>, developing AI-powered solutions that bend reality. We create intelligent tools for businesses and education, focusing on privacy-first AI infrastructure.
+              </p>
+              <UButton
+                to="https://requrv.io"
+                target="_blank"
+                color="neutral"
+                variant="ghost"
+                size="sm"
+                trailing-icon="i-heroicons-arrow-top-right-on-square"
+              >
+                Visit ReQurv
+              </UButton>
+            </div>
           </div>
         </div>
 
