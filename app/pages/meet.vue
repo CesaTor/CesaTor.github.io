@@ -133,14 +133,25 @@ const downloadVCard = () => {
   const encoded = 'QkVHSU46VkNBUkQKVkVSU0lPTjozLjAKRk46Q2VzYXJlIFRvcmNoaWEKVElUTEU6RnVsbC1zdGFjayBEZXZlbG9wZXIKVEVMO1RZUEU9Q0VMTDorMzkgMzc4IDQyMiAxMzU1CkVNQUlMOmNlc2FyZUB0b3JjaGlhLmV1ClVSTDpodHRwczovL2Nlc2FyZS50b3JjaGlhLmV1Ck5PVEU6RnVsbC1zdGFjayB3ZWIgYXBwbGljYXRpb25zIHdpdGggQUkvTUwgaW50ZWdyYXRpb24uCkVORDpWQ0FSRA=='
   const vcard = atob(encoded)
 
-  const blob = new Blob([vcard], { type: 'text/vcard' })
+  const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' })
   const url = URL.createObjectURL(blob)
-  const link = document.createElement('a')
-  link.href = url
-  link.setAttribute('download', 'cesare_torchia.vcf')
-  document.body.appendChild(link)
-  link.click()
-  document.body.removeChild(link)
+  
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent)
+  
+  if (isIOS) {
+    const newWindow = window.open(url, '_blank')
+    if (newWindow) {
+      setTimeout(() => URL.revokeObjectURL(url), 100)
+    }
+  } else {
+    const link = document.createElement('a')
+    link.href = url
+    link.setAttribute('download', 'cesare_torchia.vcf')
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+    URL.revokeObjectURL(url)
+  }
 }
 </script>
 
