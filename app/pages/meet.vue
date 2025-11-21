@@ -139,14 +139,12 @@ const downloadVCard = () => {
   const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent)
   
   if (isIOS) {
-    const newWindow = window.open(url, '_blank')
-    if (newWindow) {
-      setTimeout(() => URL.revokeObjectURL(url), 100)
-    }
+    const dataUrl = `data:text/vcard;charset=utf-8,${encodeURIComponent(vcard)}`
+    window.location.href = dataUrl
   } else {
     const link = document.createElement('a')
     link.href = url
-    link.setAttribute('download', 'cesare_torchia.vcf')
+    link.download = 'cesare_torchia.vcf'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
