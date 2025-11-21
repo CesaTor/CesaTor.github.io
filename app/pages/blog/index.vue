@@ -8,7 +8,7 @@
 
       <div class="grid gap-8">
         <div 
-          v-for="article in list" 
+          v-for="article in sortedList" 
           :key="article.path" 
           class="group relative bg-gray-900/50 border border-gray-800 rounded-2xl p-8 hover:border-primary-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/10"
         >
@@ -55,5 +55,13 @@ useHead({
 
 const { data: list } = await useAsyncData('blog-list', () => {
   return queryCollection('content').all()
+})
+
+// Sort by date in descending order (most recent first)
+const sortedList = computed(() => {
+  if (!list.value) return []
+  return [...list.value].sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime()
+  })
 })
 </script>
